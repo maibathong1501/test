@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style/style.css">
+    
+    <title>Hello Javascript</title>
+</head>
+<body>
+    <h1 id="title">Hello Javascript</h1>
+    <img id="img" src="/image/ai.jfif" alt="">
+    <br>
+    <input id="txt" value="123">
+    <hr>
+    <h1 id="tieu-de">Hello Javascript</h1>
+    <button id="btn-click-me" onclick="changeContent()">Click me!!!</button>
+    <hr>
+    <h1>Bài tập: viết chương trình tính lương nhân viên dựa vào số giờ làm và tìm công 1 giờ</h1>
+    <div class="form-group">
+        <p>nhập tiền lương 1h:</p>
+        <input class="form-control w-50" id="tien-luong-1h">
+        <p>nhập số giờ làm:</p>
+        <input class="form-control w-50" id="so-gio-lam">
+        <button class="btn btn-dark my-2" id="btn-tinh-tien" onclick="bai1()">Tính tiền</button>
+        <div class="alert bg-dark text-white p-3" id="ket-qua-bai-1"></div>
+    </div>
+    <hr>
+    <h1>Bài 2: Bật tắt đèn:</h1>
+    <button id="btn-bat-den" onclick="batDen()">Bật đèn</button>
+    <img id="den" src="/image/pic_bulboff.gif" alt="">
+    <button id="btn-tat-den" onclick="tatDen()">Tắt đèn</button>
+    <hr>
+        <h1>Bài 3: Xử lý form đăng nhập</h1>
+        <div class="card w-50 mx-auto">
+            <div class="card-header text-center">
+                <p>đăng nhập</p>
+            </div>
+            <div class="card-body">
+                <p>tài khoản</p>
+                <input id="tai-khoan" class="form-control">
+                <p>mật khẩu</p>
+                <input type="password" id="mat-khau" class="form-control">
+            </div>
+            <div class="card-footer text-center">
+                <button class="btn btn-dark my-2" onclick="dangNhap()">Đăng nhập</button>
+            </div>
+            <div id="ket-qua-bai-3" class="alert alert-success"></div>
+        </div>
+
+        <hr>
+        <h1>Tính tiền tip</h1>
+        <div class="card w-50 mx-auto">
+            <div class="card-header bg-danger text-light text-center">
+                <span>Tính tiền tip</span>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <p>Nhập vào tổng tiền</p>
+                    <input id="tong-tien" class="form-control">
+                </div>
+                <div class="form-group">
+                    <p>Chọn phần trăm tip</p>
+                    <select id="phan-tram" class="form-control">
+                        <option value="30">Tốt</option>
+                        <option value="20">Khá</option>
+                        <option value="10">Tồi</option>
+                        <option value="5">Tệ</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Số nhân viên</p>
+                    <input id="so-nhan-vien" class="form-control">
+                </div>
+                <div class="form-group text-center">
+                    <button class="btn btn-danger mt-2" onclick="tinhTientip()">TÍNH NÀO</button>
+                    <h3 class="text-center mt-2">
+                        TIỀN TIP / nhân viên
+                        <p class="fs-3" id="tien-tip-moi-nv">
+                            10$
+                        </p>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h1>Tạo thẻ bằng Javascript</h1>
+        <button class="btn btn-danger" onclick="taoThe()">Gửi</button>
+        <input type="text" class="form-control d-line w-25" id="tin-nhan">
+        <div class="content" id="div-content"></div>
+        
+
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
